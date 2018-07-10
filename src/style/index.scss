@@ -1,0 +1,16 @@
+@import 'components/burguer';
+@import 'components/buildControls';
+@import 'components/buildControl';
+@import 'components/header';
+
+@import 'UI/modal';
+@import 'UI/backdrop';
+@import 'UI/button';
+
+body {
+  background-color: #FFFAAA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
