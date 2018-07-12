@@ -1,5 +1,5 @@
 import React from 'react';
-import Aux from '../Layout/Layout';
+import Aux from '../Aux/Aux';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 
 const layout = props => (

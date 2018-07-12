@@ -1,16 +1,19 @@
 import React from 'react';
 import Aux from '../../../hoc/Aux/Aux';
 import Button from '../../../components/UI/Button/Button';
+import Spinner from '../../UI/Spinner/Spinner';
 
 const orderSummary = props => {
-  const ingredientSummary = Object.keys(props.ingredients).map(
-    (ingKey, index) => {
+  const ingredientSummary = props.ingredients ? (
+    Object.keys(props.ingredients).map((ingKey, index) => {
       return (
         <li className="text-capitalize" key={index}>
           {ingKey} : {props.ingredients[ingKey]}
         </li>
       );
-    }
+    })
+  ) : (
+    <Spinner />
   );
   return (
     <Aux>
